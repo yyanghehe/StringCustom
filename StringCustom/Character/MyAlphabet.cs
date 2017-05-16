@@ -5,7 +5,8 @@ using System.Text;
 
 namespace StringCustom.Character
 {
-    class MyAlphabet
+    static class MyAlphabet
     {
+        public static string strs = "ABCDEFGHIJKLMNabcdefghijklmnopqrstuvwxyz";
     }
 }

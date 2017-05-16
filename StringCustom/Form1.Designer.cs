@@ -28,62 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboxAlpha = new System.Windows.Forms.CheckBox();
+            this.cboxNum = new System.Windows.Forms.CheckBox();
+            this.cboxMark = new System.Windows.Forms.CheckBox();
+            this.cboxChinese = new System.Windows.Forms.CheckBox();
+            this.tboxLength = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // cboxAlpha
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(13, 13);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(48, 16);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "字母";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cboxAlpha.AutoSize = true;
+            this.cboxAlpha.Location = new System.Drawing.Point(13, 13);
+            this.cboxAlpha.Name = "cboxAlpha";
+            this.cboxAlpha.Size = new System.Drawing.Size(48, 16);
+            this.cboxAlpha.TabIndex = 0;
+            this.cboxAlpha.Text = "字母";
+            this.cboxAlpha.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cboxNum
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(13, 45);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(48, 16);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "数字";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cboxNum.AutoSize = true;
+            this.cboxNum.Location = new System.Drawing.Point(13, 45);
+            this.cboxNum.Name = "cboxNum";
+            this.cboxNum.Size = new System.Drawing.Size(48, 16);
+            this.cboxNum.TabIndex = 1;
+            this.cboxNum.Text = "数字";
+            this.cboxNum.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cboxMark
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(13, 78);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(48, 16);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "符号";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cboxMark.AutoSize = true;
+            this.cboxMark.Location = new System.Drawing.Point(13, 78);
+            this.cboxMark.Name = "cboxMark";
+            this.cboxMark.Size = new System.Drawing.Size(48, 16);
+            this.cboxMark.TabIndex = 2;
+            this.cboxMark.Text = "符号";
+            this.cboxMark.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cboxChinese
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(12, 110);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(48, 16);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "中文";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cboxChinese.AutoSize = true;
+            this.cboxChinese.Location = new System.Drawing.Point(12, 110);
+            this.cboxChinese.Name = "cboxChinese";
+            this.cboxChinese.Size = new System.Drawing.Size(48, 16);
+            this.cboxChinese.TabIndex = 3;
+            this.cboxChinese.Text = "中文";
+            this.cboxChinese.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tboxLength
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 21);
-            this.textBox1.TabIndex = 4;
+            this.tboxLength.Location = new System.Drawing.Point(148, 8);
+            this.tboxLength.Name = "tboxLength";
+            this.tboxLength.Size = new System.Drawing.Size(141, 21);
+            this.tboxLength.TabIndex = 4;
             // 
             // textBox2
             // 
@@ -110,6 +110,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "生成";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -119,11 +120,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.tboxLength);
+            this.Controls.Add(this.cboxChinese);
+            this.Controls.Add(this.cboxMark);
+            this.Controls.Add(this.cboxNum);
+            this.Controls.Add(this.cboxAlpha);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -133,11 +134,11 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox cboxAlpha;
+        private System.Windows.Forms.CheckBox cboxNum;
+        private System.Windows.Forms.CheckBox cboxMark;
+        private System.Windows.Forms.CheckBox cboxChinese;
+        private System.Windows.Forms.TextBox tboxLength;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;

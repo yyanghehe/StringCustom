@@ -47,6 +47,7 @@
     <Compile Include="Character\MyAlphabet.cs" />
     <Compile Include="Character\MyChinese.cs" />
     <Compile Include="Character\MyMark.cs" />
+    <Compile Include="Character\MyNum.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

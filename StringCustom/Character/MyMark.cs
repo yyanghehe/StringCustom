@@ -7,6 +7,6 @@ namespace StringCustom.Character
 {
     static class MyMark
     {
-        static string[] strings = { };
+        public static string strs = "~`!@#$%^&*()-_=+[]{}:;\"\'<>,.?/|\\";
     }
 }

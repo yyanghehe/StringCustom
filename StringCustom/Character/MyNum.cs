@@ -5,8 +5,8 @@ using System.Text;
 
 namespace StringCustom.Character
 {
-    class MyChinese
+    static class MyNum
     {
-        public static string strs = "我爱你中国亲爱的母亲";
+        public static string strs = "0123456789";
     }
 }
